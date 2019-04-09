@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="css/bootstrap.min.css")}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename="teacher.png")}}">
+  </head>
+  <body>
+   <div class="container">
+      <div class="well text-center">
+                <h1>Student Flask Application</h1>
+      </div>
+       <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+                 <h3>student list
+                     <button class="pull-right btn btn-primary" data-toggle="modal" data-target="#createStudentForm"> Add student</button>
+                 </h3>
+                 <table class="table table-striped">
+                      <thead>
+                      <tr> <th>Serial</th>
+                       <th>Name</th>
+                       <th>Phone</th>
+                       <th>Email</th>
+                       <th>Action</th></tr>
+                     </thead>
+                     <tbody>
+                              <tr>
+                                 <td>01</td>
+                                 <td>Daniel</td>
+                                 <td>072000000000</td>
+                                 <td>daniel@dan.com</td>
+                                 <td>
+                                      <a href="" class="btn btn-warning btn-xs" data-toggle="modal" data-target="editStudent">edit</a>
+                                      <a href="" class="btn btn-danger btn-xs" data-toggle="modal" data-target="deleteStudent">delete</a>
+                                 </td>
+                              </tr>
+                     </tbody>
+                     <tfoot>
+                      <tr> <th>Serial</th>
+                       <th>Name</th>
+                       <th>Phone</th>
+                       <th>Email</th>
+                       <th>Action</th></tr>
+                     </tfoot>
+                 </table>
+             </div>
+           </div>
+       </div>
+       <div class="well">
+         <h3>&copy 2019, Dan Company
+         <span class="pull-right">Get the code on my github:</span>
+         </h3>
+  </div>
+   </div>
+  </body>
+</html>
