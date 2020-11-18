@@ -65,7 +65,7 @@ mysqlclient==1.3.13
 nbconvert==5.4.0
 nbformat==4.4.0
 netifaces==0.10.4
-notebook==5.7.2
+notebook==6.1.5
 oauth==1.0.1
 oauthlib==2.1.0
 olefile==0.45.1
